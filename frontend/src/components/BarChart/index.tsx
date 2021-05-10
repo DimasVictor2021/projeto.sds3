@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Chart from 'react-apexcharts';
-import { SaleSuccess } from 'Types/sale';
+import { SaleSuccess } from 'types/sale';
 import { round } from 'utils/format';
 import { BASE_URL } from 'utils/requests';
 
@@ -13,7 +13,7 @@ type SeriesData = {
 type ChartData = {
     labels: {
         categories: string[];
-    }
+    };
     series: SeriesData[];
 }
 const BarChart = () => {
